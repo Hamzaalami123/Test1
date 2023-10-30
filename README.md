@@ -1,14 +1,14 @@
 Pour exécuter l'image Dockerfile en local, procédez comme suit :
 
-Installez d'abord Docker sur votre machine.
+1 - Installez d'abord Docker sur votre machine.
 Ensuite, utilisez les commandes suivantes pour construire et exécuter l'image Docker :
 
-Construisez l'image Docker en utilisant la commande suivante :
+2 - Construisez l'image Docker en utilisant la commande suivante :
 
-docker build -t projettest1
+> docker build -t projettest1
 
-Exécutez l'image Docker en utilisant la commande suivante pour mapper le port 8080 de votre machine au port 80 de l'image :
+3 - Exécutez l'image Docker en utilisant la commande suivante pour mapper le port 8080 de votre machine au port 80 de l'image :
 
-docker run -p 8080:80 projettest1
+> docker run -p 8080:80 projettest1
 
 
