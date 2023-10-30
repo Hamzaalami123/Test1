@@ -6,7 +6,7 @@
 FROM mcr.microsoft.com/dotnet/runtime:6.0 AS base
 WORKDIR /app
 # Copy the CSV file from the host machine to the container
-COPY Test1/Data/passengers.csv /app/Data/passengers.csv
+COPY Test1/Data/passengers.csv /Data/passengers.csv
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src

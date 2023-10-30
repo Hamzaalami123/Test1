@@ -4,6 +4,7 @@ using System.Globalization;
 using Test1.Models;
 using Projet_Test1.Interfaces;
 using System.Text;
+using System.Text.Json;
 
 namespace Projet_Test1.Services
 {
@@ -11,7 +12,7 @@ namespace Projet_Test1.Services
     {
         List<Passenger> IPassengerService.CreatePassengers()
         {
-            string filePath = @"Data/passengers.csv";
+            string filePath = @"../../../Data/passengers.csv";
             var passengers = ReadPassengersFromCSV(filePath);
 
             return passengers.Take(200).ToList();
